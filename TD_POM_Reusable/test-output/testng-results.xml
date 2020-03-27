@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17115" started-at="2020-03-27T00:49:44Z" finished-at="2020-03-27T00:50:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17115" started-at="2020-03-27T00:49:44Z" finished-at="2020-03-27T00:50:01Z">
+      <class name="tests.LoginPageTests">
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:tests.LoginPageTests@6f7fd0e6]" name="getDriver" is-config="true" duration-ms="10252" started-at="2020-03-27T00:49:44Z" finished-at="2020-03-27T00:49:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="openPage()[pri:0, instance:tests.LoginPageTests@6f7fd0e6]" name="openPage" is-config="true" duration-ms="3981" started-at="2020-03-27T00:49:55Z" finished-at="2020-03-27T00:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method status="PASS" signature="doValidUserNameValidPasswordLogin(java.util.Map)[pri:0, instance:tests.LoginPageTests@6f7fd0e6]" name="doValidUserNameValidPasswordLogin" duration-ms="2226" started-at="2020-03-27T00:49:59Z" data-provider="getData" finished-at="2020-03-27T00:50:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=4724090176305934, Password=ilisca917382}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doValidUserNameValidPasswordLogin -->
+      </class> <!-- tests.LoginPageTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
