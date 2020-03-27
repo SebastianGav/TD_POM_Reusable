@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import base.Base;
 import pages.LoginPage;
@@ -37,6 +38,11 @@ public class LoginPageTests extends Base {
 		LoginPage lg = new LoginPage(driver);
 		
 		lg.loginMethod(mp.get("UserName"), mp.get("Password"));
+		String expectedText = "This should be working, but something's gone wrong. Please try again soon. [500.GENERIC]";
+		String acctualText = lg.getSpecialErrorText();
+		SoftAssert sfa = new SoftAssert();
+		sfa.assertEquals(acctualText, expectedText);
+		sfa.assertAll();
 	}
 	
 	@DataProvider

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17115" started-at="2020-03-27T00:49:44Z" finished-at="2020-03-27T00:50:01Z">
+  <suite name="Suite" duration-ms="17328" started-at="2020-03-27T20:12:43Z" finished-at="2020-03-27T20:13:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17115" started-at="2020-03-27T00:49:44Z" finished-at="2020-03-27T00:50:01Z">
+    <test name="Test" duration-ms="17328" started-at="2020-03-27T20:12:43Z" finished-at="2020-03-27T20:13:00Z">
       <class name="tests.LoginPageTests">
-        <test-method status="PASS" signature="getDriver()[pri:0, instance:tests.LoginPageTests@6f7fd0e6]" name="getDriver" is-config="true" duration-ms="10252" started-at="2020-03-27T00:49:44Z" finished-at="2020-03-27T00:49:54Z">
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:tests.LoginPageTests@68c4039c]" name="getDriver" is-config="true" duration-ms="10222" started-at="2020-03-27T20:12:43Z" finished-at="2020-03-27T20:12:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method status="PASS" signature="openPage()[pri:0, instance:tests.LoginPageTests@6f7fd0e6]" name="openPage" is-config="true" duration-ms="3981" started-at="2020-03-27T00:49:55Z" finished-at="2020-03-27T00:49:59Z">
+        <test-method status="PASS" signature="openPage()[pri:0, instance:tests.LoginPageTests@68c4039c]" name="openPage" is-config="true" duration-ms="3740" started-at="2020-03-27T20:12:54Z" finished-at="2020-03-27T20:12:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method status="PASS" signature="doValidUserNameValidPasswordLogin(java.util.Map)[pri:0, instance:tests.LoginPageTests@6f7fd0e6]" name="doValidUserNameValidPasswordLogin" duration-ms="2226" started-at="2020-03-27T00:49:59Z" data-provider="getData" finished-at="2020-03-27T00:50:01Z">
+        <test-method status="PASS" signature="doValidUserNameValidPasswordLogin(java.util.Map)[pri:0, instance:tests.LoginPageTests@68c4039c]" name="doValidUserNameValidPasswordLogin" duration-ms="2696" started-at="2020-03-27T20:12:58Z" data-provider="getData" finished-at="2020-03-27T20:13:00Z">
           <params>
             <param index="0">
               <value>
@@ -27,6 +27,6 @@
           </reporter-output>
         </test-method> <!-- doValidUserNameValidPasswordLogin -->
       </class> <!-- tests.LoginPageTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

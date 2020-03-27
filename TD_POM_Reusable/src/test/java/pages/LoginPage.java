@@ -13,6 +13,7 @@ public class LoginPage {
 	By userNameLocator = By.xpath("//input[@id='username100']");
 	By passwordLocator = By.xpath("//div[@class='otp-box-content']//input[@id='password']");
 	By clickLogin = By.xpath("//div[@class='otp-box light-green hidden-xs otp-separate-right-nav']//button[1]");
+	By specialErrorTextLocator = By.xpath("//span[@id='error']");
 	
 	public LoginPage(WebDriver driver) {
 		this.driver=driver;
@@ -32,7 +33,13 @@ public class LoginPage {
 		getElement(passwordLocator, 2).sendKeys(password);
 		sfa.assertEquals(getElement(passwordLocator, 2).getAttribute("value"), password);
 		
-		getElement(clickLogin, 2).click();			
+		getElement(clickLogin, 2).click();
+		sfa.assertAll();
+	}
+	
+	public String getSpecialErrorText() {
+		String specialErrorText = getElement(specialErrorTextLocator, 2).getText();
+		return specialErrorText;
 	}
 
 }
